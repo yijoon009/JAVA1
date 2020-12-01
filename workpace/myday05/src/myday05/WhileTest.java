@@ -1,0 +1,13 @@
+package myday05;
+
+public class WhileTest {
+	public static void main(String[] args) {
+		int cnt=0;
+		//while문의 목적에 맞지 않게 사용하면 오히려 더 복잡하게 구현된다.
+		//조건식이 11번째에 false로 바뀌면 10번 반복
+		while(cnt!=10) {
+			cnt++;
+			System.out.println(cnt+". 김이준");
+		}
+	}
+}

@@ -1,0 +1,16 @@
+package day05;
+
+import java.util.Scanner;
+
+public class DoWhileTest {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int choice =0;
+		String msg="1.통신요금 조회\n2.분실신고\n3.단말기 대금납부\n0.상담원 연결";
+		do {System.out.println(msg);
+			choice=sc.nextInt();
+			
+			//if(choice==0) {break;}
+		}while(choice!=0);
+	}
+}

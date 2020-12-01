@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\yijoo\Desktop\20-1\JAVA1\workpace\day03_java1.zip"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\teacher\java1_예제모음.zip"/>
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\workpace\myday10.zip"/>
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\teacher\day10.zip"/>
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\teacher\day09.zip"/>
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\workpace\myday09.zip"/>
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\teacher\day07.zip"/>
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\teacher\arrTask.zip"/>
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\teacher\day08.zip"/>
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\workpace\myday07.zip"/>
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\workpace\myday04.zip"/>
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\workpace\day03 (1).zip"/>
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\workpace\day02.zip"/>
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\teacher\day06.zip"/>
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\teacher\cgv.zip"/>
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\workpace\myday05.zip"/>
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\teacher\day05.zip"/>
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\teacher\sday04.zip"/>
+			<item value="C:\Users\yijoo\Desktop\개발자\JAVA1\workpace\day4.zip"/>
+			<item value="C:\Users\yijoo\Desktop\20-1\JAVA1\workpace\sday03.zip"/>
+			<item value="C:\Users\yijoo\Desktop\20-1\JAVA1\workpace\day03.zip"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+</section>

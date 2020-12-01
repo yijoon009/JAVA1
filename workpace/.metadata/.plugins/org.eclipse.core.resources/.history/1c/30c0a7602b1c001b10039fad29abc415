@@ -1,0 +1,42 @@
+package day03;
+
+import javax.swing.JOptionPane;
+
+public class DialogTest {
+	public static void main(String[] args) {
+		/*
+		 * 출력 대화상자
+		 * JOptionPane.showMessageDialog(null, "출력할 메세지");
+		 * 
+		 * 입력 대화상자(통채로를 입력받은 문자열 값으로 봐야한다)
+		 * JOptionPane.showInputDialog("출력할 메세지");
+		 * 
+		 */
+		
+//		JOptionPane.showMessageDialog(null, 
+//				JOptionPane.showInputDialog("성함을 입력하세요")+"님 환영합니다.");
+		//JOptionPane.showInputDialog("성함을 입력하세요") <-자체가 사람이 입력한 값
+	
+		//대화상자로 두 정수를 입력받고 두 정수의 뺄셈 출력하기
+		int num1=0, num2=0;
+		
+		String n1Msg="첫번째 정수를 입력하세요";
+		String n2Msg="두번째 정수를 입력하세요";
+		String resultMsg="";
+		
+		num1=Integer.parseInt(JOptionPane.showInputDialog(n1Msg));
+		num2=Integer.parseInt(JOptionPane.showInputDialog(n2Msg));
+		
+		int result=num1-num2;
+		resultMsg=num1+" - "+ num2+" = "+result;
+		
+		JOptionPane.showMessageDialog(null, result);
+		
+				
+		
+		
+		
+		
+	
+	}
+}

@@ -1,0 +1,139 @@
+<제어문>
+	조건문
+		-if문
+
+if(조건식){
+	실행할 문장;
+}
+//아래 if문은 위의 조건식의 결과에 상관없이 무조건 검사
+if(조건식){
+	실행할 문장;
+}
+if(조건식){
+	실행할 문장;
+}
+각각 세번 검사할 때
+-----------------
+한번만 검사할때
+if(조건식){
+	실행할 문장;
+}
+//아래 else if문은
+//위의 조건식이 참이면 검사하지 않고,
+//위의 조건식이 거짓이면 검사한다.
+else if(조건식){
+	실행할 문장;
+}
+else{
+	실행할 문장;	//잘못 입력했습니다. 다시 입력해주세요.
+}
+
+
+퀴즈 풀어보기
+String q_Msg="다음 중 동물이 아닌것은?";
+String choiceMsg="1.사자\n2.호랑이\n3.지우개\n4.토끼\n"
+
+package day04;
+
+import java.util.Scanner;
+
+public class Quiz {
+	public static void main(String[] args) {
+		String qMsg = "Q.다음 중 동물이 아닌 것은?";
+		String choiceMsg = "1.사자\n2.호랑이\n3.지우개\n4.토끼";
+		
+		Scanner sc = new Scanner(System.in);
+		int choice = 0;
+		int answer = 3;
+		
+		String resultMsg = "";
+		
+		System.out.println(qMsg + "\n" + choiceMsg);
+		choice = sc.nextInt();
+		
+		if(choice == answer) {
+			resultMsg = "정답!";
+		}else if(choice >= 1 && choice <= 4) {
+			resultMsg = "오답ㅠㅠ";
+		}else {
+			resultMsg = "?";
+		}
+		//일괄처리
+		System.out.println(resultMsg);
+	}
+}
+
+
+
+
++혈액형별
+		String msg="Q. 당신의 혈액형은?";
+		String choiceMsg="1.A\n2.B\n3.O\n4.AB";
+
+
+		-switch문
+	switch(변수명){
+	case 값1:
+		실행할 문장;
+		break;
+	case 값2:
+		실행할 문장;
+		break;
+	case 값3:
+		실행할 문장;
+		break;
+	...
+	default:
+		실행할 문장;
+	}
+
+----------------------------------------------------
+
+	반복문
+
+대입 연산자(복합 대입 연산자, 누적 연산자)
++=, -=, *=, /=, %=,,,
+
+	int money = 10000;
+	//money = money - 1000;
+	money -=1000;
+	syso(money);
+
+
+	int data=10;
+	//data=data+1;
+	//data+=1;
+	data++;	
+
+증감 연산자(++,--)
+	전위형
+		++data
+	후위형
+		data--
+
+	for문
+
+	for(초기식; 조건식; 증감식){
+		반복할 문장;
+	}
+
+
+
+
+	while문
+
+
+
+
+
+	do~while문
+
+
+
+
+
+
+
+
+
+

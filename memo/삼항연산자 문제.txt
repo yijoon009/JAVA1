@@ -1,0 +1,45 @@
+package day03_ex;
+
+import java.util.Scanner;
+
+public class Quiz {
+   public static void main(String[] args) {
+      //정답 2개
+      
+      String q_msg = "다음 중 위인이 아닌 인물은?\n";
+      String choice_msg = "1.이순신\n2.둘리\n3.강감찬\n4.한동석";
+      String example_msg = "정답은 2개입니다. 정답 사이에 공백을 넣어주세요\n"
+            + "정답이 1번과 3번일 경우 : 1 3";
+      Scanner sc = new Scanner(System.in);
+      
+      int answer1 = 2;
+      int answer2 = 4;
+      
+      int choice1 = 0;
+      int choice2 = 0;
+      
+      boolean condition1 = false;
+      boolean condition2 = false;
+      
+      boolean condition3 = false;
+      boolean condition4 = false;
+      
+      String result_msg = null;
+      
+      System.out.println(q_msg + choice_msg);
+      
+      choice1 = Integer.parseInt(sc.next());
+      choice2 = Integer.parseInt(sc.next());
+      
+      condition1 = choice1 == answer1 && choice2 == answer2;
+      condition2 = choice1 == answer2 && choice2 == answer1;
+      
+      condition3 = choice1 > 4 || choice1 < 1;
+      condition4 = choice2 > 4 || choice2 < 1;
+      
+      result_msg = condition1 || condition2 ? "정답!" :
+         condition3 || condition4 ? "다시 시도해주세요" : "오답...";
+               
+      System.out.println(result_msg);
+   }
+}

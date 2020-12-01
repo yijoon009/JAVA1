@@ -1,0 +1,26 @@
+package variable;
+
+public class Variable2 {
+	public static void main(String[] args) {
+		Variable1 v1 = new Variable1();
+		Variable1 v2 = new Variable1();
+
+		v1.data_s = 600;
+		
+		System.out.println(v2.data_s);
+		
+		
+//		v1.increase();
+//		v1.increase();
+//		v1.increase();
+//		v1.increase();
+//		v1 = new Variable1();
+//		v1.increase();
+//		v1.increase();
+//		v1.increase();
+//		v1.increase();
+//		v1.increase();
+		
+		
+	}
+}

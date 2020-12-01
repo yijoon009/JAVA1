@@ -1,0 +1,223 @@
+프로그래밍 언어
+
+JAVA
+	1. 이석성, 생산성(OOP : 객체지향언어)
+
+	JAVA 프로그램
+	JVM(자바 가상 운영체제)
+	운영체제(하드웨어에 적절한 전기 신호를 흘려주는 역할)
+	하드웨어
+
+	이식성 : 기존의 위치에서 다른 위치로 옮겼을 때 정상가동이 되는 성질
+	JAVA는 다른 운영체제에서 개발했더라도 JVM만 설치되어 있다면
+	정상 가동이 되기 때문에 이식성이 좋은 언어이다.
+
+	2. 처리비용 감소(생산성이 좋기 때문)
+	
+		A공장 : 1시간에 10개를 찍어내는 공장
+		B공장 : 1시간에 100개를 찍어내는 공장 : JAVA
+
+	3. 효율성 증가
+		
+	4. 웹(Web) : 서로 데이터를 주고 받을 수 있는 장소
+
+		웹 개발언어
+		ASP : 마이크로소프트에서 만든 언어(유지보수가 뛰어납니다)
+		PHP : 소규모 프로젝트(난이도가 상대적으로 쉽다)
+		         오픈소스 기반.
+		JSP : Java + Server + Page(웹 표준)
+		        개발중인 프로젝트와 개발된 프로젝트의 비중이 높기 때문에
+		        필드에 나가기 보다 쉽다.
+		        소규모 + 대규모 프로젝트
+		        소규모에 더 적합하다. 대규모는 Spring Framwork에서 보통 개발한다.
+					전자정부표준프레임워크
+		Django : 대규모 프로젝트, 파이썬 기반 오픈소스, 빅데이터 시각화
+	
+	5. 앱(Android, ios)
+		코틀린, JAVA
+
+	Android에서는 JAVA소스코드를 코틀린코드로 변경해주는 기능을 제공
+	현재 JAVA로 진행된 프로젝트의 비율과 코틀린으로 개발된 프로젝트 비율이 전 세계로 놓고 보면 비슷하다.
+	하지만 한국에서는 아직 JAVA가 압승이다.
+
+단점 : 다른 언어(운영체제와 직접 소통하는 언어)에 비해서 상대적으로 속도가 느리다, 용량이 더 크다.
+-------------------------------------------------------------------------------------------------
+기본 구성 요소
+	프로젝트(Alt + shift + n)
+		패키지
+			클래스(Ctrl + n)
+				메소드
+					소스코드
+
+프로젝트 만들기 : Alt + Shift + n
+패키지 및 클래스 만들기 : Ctrl + n
+자동 줄 맞춤 : Ctrl + Shift + f
+자동 import : Ctrl + Shift + o
+View 단축키 : Alt + Shift + q
+복사 : Ctrl + Alt + 위 또는 아래 방향키
+이동 : Alt + 위 또는 아래 방향키
+이름변경(다른 곳에 사용된 것 까지 변경) : [Alt + Shift + r] > [이름 변경 후 엔터]
+컴파일 : Ctrl + F11
+디버그 : F11
+
+출력메소드
+	1. print()	: 줄바꾸지 않고 출력
+	2. println() : 마지막 줄바꾸고 출력
+	3. printf() : 서식문자 사용가능(줄바꾸지 않고 출력)
+
+제어문자
+	따옴표안에 \가 있으면 제어문자이다.
+
+주석
+	해석하지 않도록 하는 기법
+	1. 코드에 설명글을 달 때
+	2. 지금 당장 사용하지 않는 코드가 있을 때
+
+변수(Variable) : 저장공간
+	x	=	0
+	저장공간의 대입연산자	값(상수)
+	이름
+
+자료형(type)
+
+	자료형	type	byte	값
+
+	논리형	boolean	1	true, false, 10<1
+
+	정수형	byte	1
+		short	2
+		======> 이미지 또는 동영상파일에서 사용된다.
+		int	4(-21억~21억)
+		long	8(밀리초:1000분의 1초)	10L
+
+	실수형
+		float	4	10.0F
+		double	8	10.0
+	
+	문자형	char	2 (\u)	'd', '1'
+	문자열	String	???	"abc", "d"
+
+
+
+package day01_ex
+
+public class Variable{
+	public static void main(String[] args){
+		int age = 20;
+		String name = "한동석";
+
+		age = 100;
+
+		System.out.print(age + 9);
+		System.out.print(name + "님");
+
+
+	}
+}
+
+
+형변환
+	자동 형변환
+		1 + 0.0 = 1.0
+		정수 + 실수 = 실수
+
+		문자 + 정수 = 정수(암호화)
+	
+	강제 형변환
+		(자료형)값
+		값이 자료형 타입으로 변환 된다.
+
+		(int)4.99	 == 4
+
+		Integer, Double 등의 클래스타입으로 String타입의 값을
+		강제 형변환할 수 있다.
+	
+
+입력 클래스(Scanner)
+
+	String name = "한동석";
+	Scanner sc = 어떤 값;
+	
+입력 메소드
+	Scanner타입의 변수명.next()
+	Scanner타입의 변수명.nextLine()
+	sc.nextInt()
+	sc.nextDouble()
+
+	Scanner sc = new Scanner(System.in);
+	
+	System.out.println("이름을 입력하세요");
+
+	sc.next() : 공백, 줄바꿈문자(엔터)를 구분점으로 삼고 양 옆의 문자열 값을 분리시켜준다.
+	sc.nextLine() : 구분점없이 입력받은 모든 값을 저장한다.
+
+	String msg = JOptionpane.showInputDialog("출력할 메세지");
+	JOPtionpane.showMessageDialog("출력할 메세지");
+
+연산자
+	최우선 연산자
+		()
+	단항 연산자
+		~, !, ()
+	산술 연산자
+		+, -, *, /, %,...
+	쉬프트 연산자
+		<<, >>(빈 칸이 부호에 맞게 채워진다), a >>> b(빈 칸은 무조건 0으로 채워진다)
+	관계 연산자
+		<, >, <=, >=, ==, !=
+	논리 연산자
+		&, |, ^, &&, ||
+	삼항 연산자
+		a ?  b : c
+	대입 연산자
+		=
+
+package task
+
+public class Quiz_task{
+	public static void main(String[] args){
+		//문제 출제 후 맞으면 정답! 틀리면 오답! 출력
+		//삼항 연산자를 사용한다.
+		//잘못 입력했을 때 "?" 출력
+		String qMsg = "Q.다음 어린이 중 잘못된 행동을 한 어린이를 고르세요"
+		String choiceMsg = "1.영희 : 할머니 짐을 들어주었어요!\n"
+				+ "2. 철수 : 아버지가 담배가 떨어져서 담배를 사왔어요.\n"
+				+ "3. 민수 : 엄마 어깨를 마사지 해주었어요!\n"
+				+ "4. 다희 : 길에 떨어진 쓰레기를 주웠어요!";
+		
+		String correctMsg = "정답입니다. ";
+		String wrongMsg = "오답 입니다.";
+		String errorMsg = "1번에서 4번까지만 눌러주세요.";
+		String resultMsg = "";
+
+		int choice = Integer.parseInt(
+			JOptionPane.showInputDialog(qMsg + "\n" + choiceMsg));
+
+		int answer = 2;
+
+		resultMsg = choice == answer ? correctMsg : 
+			!(choice < 1 || choice >4) ? wrongMsg : errorMsg;
+
+		System.out.println(resultMsg);
+	}
+}
+
+	[산술 연산자]
+	1+3+"1" : "41"
+	"1"+3+1 : "131"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
